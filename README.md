@@ -12,6 +12,9 @@ The score is calculated by the amount of time remaining at the end of the quiz. 
 
 When time runs out and/or all questions are answered, the player is presented with their final score. 
 
+# Screenshot 
+![Getting Started](./assets/images/imagecodequiz.png)
 # Game Link
-
+https://iimkenny.github.io/code-quiz/
 # Repository Link
+https://github.com/iiMKenny/code-quiz
