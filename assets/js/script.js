@@ -1,17 +1,15 @@
-// DECOLRATIONS
-
-// VAR FOR TIMER   (global) 
+// VAR FOR TIMER 
 var time = document.querySelector(".timer");
 var score = document.querySelector("#score");
 var secondsLeft = 90;
 
-//VAR FOR BUTTONS (global )
+//VAR FOR BUTTONS
 const start = document.querySelector("#start");
 
 // VAR FOR INTRO/START
-const codersIntro = document.querySelector("#challenge-begins");
+const codersIntro = document.querySelector("#start-challenge");
 
-//CALL END LOAD EMLEMENT VAR
+//CALL END LOAD ELEMENT VAR
 var questionsEl = document.querySelector(".all-question");
 
 // ELEMENT LOCATIONS VAR
@@ -45,9 +43,7 @@ const ans2Btn = document.querySelector("#answer-2");
 const ans3Btn = document.querySelector("#answer-3");
 const ans4Btn = document.querySelector("#answer-4");
 
-
-
-// ARRAY OF FIVE QUESTION, ZERO BASED, NUMBER CORRECTLY. 
+// ARRAY OF TEN QUESTION. 
 const questions = [ 
     {
         question: "Where is the correct place to insert JavaScript?",
@@ -229,7 +225,7 @@ function clearScores() {
 // Start timer and display first question when click start quiz
 start.addEventListener("click", startQuiz);
 
-// CHECK ANSER LISTENER EVENT
+// CHECK ANSWER LISTENER EVENT
 ansBtn.forEach(item => {
     item.addEventListener('click', checkAnswer);
 });
@@ -237,7 +233,7 @@ ansBtn.forEach(item => {
 // ADDING A SCORE EVENT
 submitScrBtn.addEventListener("click", addScore);
 
-// GO BACK LISTENER EVENT FUNCTIN 
+// GO BACK LISTENER EVENT FUNCTION 
 goBackBtn.addEventListener("click", function () {
     highscoresEl.style.display = "none";
     codersIntro.style.display = "block";
